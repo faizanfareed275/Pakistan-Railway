@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Train Ticket – Pakistan Railways</title>
+  <meta name="description" content="Book your Pakistan Railways ticket online. Choose your train, class, and seats easily." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:117"><i class="fa fa-phone-alt me-1"></i>Helpline: 117</a>
+        <span class="divider"></span>
+        <a href="mailto:info@pakrail.gov.pk"><i class="fa fa-envelope me-1"></i>info@pakrail.gov.pk</a>
+        <span class="divider d-none d-sm-inline-block"></span>
+        <span class="d-none d-sm-inline"><i class="fa fa-clock me-1"></i>Online Booking: 24/7</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="passenger.html"><i class="fa fa-user me-1"></i>Passenger Login</a>
+        <span class="divider"></span>
+        <a href="#"><i class="fa fa-globe me-1"></i>اردو</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="Pakistan Railways Home">
+      <div class="brand-logo">
+        <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">Pakistan Railways</span>
+        <span class="brand-urdu">پاکستان ریلویز</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trains &amp; Schedules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="schedule.html"><i class="fa fa-calendar me-2"></i>Train Schedule</a></li>
+            <li><a class="dropdown-item" href="schedule.html#live"><i class="fa fa-satellite-dish me-2"></i>Live Train Status</a></li>
+            <li><a class="dropdown-item" href="schedule.html#routes"><i class="fa fa-route me-2"></i>Routes &amp; Fares</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="about.html"><i class="fa fa-train me-2"></i>About Our Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Ticket</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger Info</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="passenger.html"><i class="fa fa-user me-2"></i>Passenger Services</a></li>
+            <li><a class="dropdown-item" href="passenger.html#pnr"><i class="fa fa-search me-2"></i>Check PNR Status</a></li>
+            <li><a class="dropdown-item" href="passenger.html#cancel"><i class="fa fa-times-circle me-2"></i>Cancel Ticket</a></li>
+            <li><a class="dropdown-item" href="passenger.html#luggage"><i class="fa fa-suitcase me-2"></i>Luggage Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="booking.html" class="btn-pr-gold">
+          <i class="fa fa-ticket-alt"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Book Ticket</li>
+    </ol></nav>
+    <h1><i class="fa fa-ticket-alt me-2"></i>Book Your Ticket</h1>
+    <p style="color:rgba(255,255,255,.75);margin:0;font-size:1rem">Complete your booking in 4 simple steps.</p>
+  </div>
+</div>
+
+<section class="section-pad-sm" style="background:var(--pr-off-white)">
+  <div class="container">
+
+    <!-- Booking Stepper -->
+    <div class="booking-stepper d-flex justify-content-center mb-5" aria-label="Booking steps">
+      <div class="d-flex align-items-flex-start w-100" style="max-width:640px">
+        <div class="booking-step active" data-step="0">
+          <div class="step-circle" aria-label="Step 1: Search">1</div>
+          <div class="step-label">Search</div>
+        </div>
+        <div class="booking-step" data-step="1">
+          <div class="step-circle" aria-label="Step 2: Choose Class">2</div>
+          <div class="step-label">Choose Class</div>
+        </div>
+        <div class="booking-step" data-step="2">
+          <div class="step-circle" aria-label="Step 3: Select Seats">3</div>
+          <div class="step-label">Select Seats</div>
+        </div>
+        <div class="booking-step" data-step="3">
+          <div class="step-circle" aria-label="Step 4: Payment">4</div>
+          <div class="step-label">Payment</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+
+        <!-- Step 0: Search -->
+        <div class="booking-panel bg-white rounded-3 p-4 border" data-step="0">
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem"><i class="fa fa-search me-2 text-green"></i>Find a Train</h2>
+          <form id="searchForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="fromStation" class="form-label">From</label>
+                <select class="form-select" id="fromStation" required>
+                  <option value="">Select Departure</option>
+                  <option value="khi">Karachi City</option>
+                  <option value="lhr">Lahore Junction</option>
+                  <option value="rwp">Rawalpindi</option>
+                  <option value="isl">Islamabad</option>
+                  <option value="psh">Peshawar Cantonment</option>
+                  <option value="qta">Quetta</option>
+                  <option value="mul">Multan Cantonment</option>
+                  <option value="fsd">Faisalabad</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="toStation" class="form-label">To</label>
+                <select class="form-select" id="toStation" required>
+                  <option value="">Select Destination</option>
+                  <option value="khi">Karachi City</option>
+                  <option value="lhr">Lahore Junction</option>
+                  <option value="rwp">Rawalpindi</option>
+                  <option value="isl">Islamabad</option>
+                  <option value="psh">Peshawar Cantonment</option>
+                  <option value="qta">Quetta</option>
+                  <option value="mul">Multan Cantonment</option>
+                  <option value="fsd">Faisalabad</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label for="journeyDate" class="form-label">Date</label>
+                <input type="date" class="form-control" id="journeyDate" required />
+              </div>
+              <div class="col-sm-4">
+                <label for="passengers" class="form-label">Passengers</label>
+                <select class="form-select" id="passengers">
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4 Adults</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <label class="form-label">&nbsp;</label>
+                <div>
+                  <button type="button" class="btn-pr-primary w-100" style="justify-content:center" data-next-step>
+                    <i class="fa fa-search"></i> Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- Search Results Preview -->
+          <div class="mt-4">
+            <div class="train-result-card">
+              <div class="train-result-header">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="train-no">14 DN</span>
+                  <strong style="font-size:.9rem">Karachi Express</strong>
+                </div>
+                <span class="status-badge status-ontime"><i class="fa fa-circle-check"></i> Available</span>
+              </div>
+              <div class="train-result-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="text-center"><div class="time-display">08:00</div><div class="time-station">KHI</div></div>
+                  <div class="duration-line flex-fill">
+                    <div class="duration-dashes flex-fill"></div>
+                    <div class="duration-label">18h</div>
+                  </div>
+                  <div class="text-center"><div class="time-display">02:00+1</div><div class="time-station">LHR</div></div>
+                  <div class="ms-auto text-end">
+                    <div class="class-price">From <strong>Rs 900</strong></div>
+                    <button class="btn-pr-primary mt-2 py-2 px-3" style="font-size:.8rem" data-next-step>
+                      <i class="fa fa-chevron-right"></i> Select
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-2 d-flex gap-2">
+                  <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">Economy</span>
+                  <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">Sleeper</span>
+                  <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Business</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 1: Choose Class -->
+        <div class="booking-panel bg-white rounded-3 p-4 border" data-step="1" style="display:none">
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem"><i class="fa fa-couch me-2 text-green"></i>Choose Your Class</h2>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="class-select-card selected" tabindex="0">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6>Economy Class</h6>
+                    <small class="text-muted">Comfortable, budget-friendly travel</small>
+                  </div>
+                  <div class="class-price-tag">Rs 900</div>
+                </div>
+                <ul class="mt-2 mb-0 ps-3" style="font-size:.8rem;color:var(--pr-gray)">
+                  <li>Comfortable seats</li>
+                  <li>Food service available</li>
+                  <li>Luggage racks</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="class-select-card" tabindex="0">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6>Sleeper Class</h6>
+                    <small class="text-muted">Lying berths for overnight journeys</small>
+                  </div>
+                  <div class="class-price-tag">Rs 1,200</div>
+                </div>
+                <ul class="mt-2 mb-0 ps-3" style="font-size:.8rem;color:var(--pr-gray)">
+                  <li>6 berths per compartment</li>
+                  <li>Overhead fans</li>
+                  <li>Canteen access</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="class-select-card" tabindex="0">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6>AC Business</h6>
+                    <small class="text-muted">Premium air-conditioned travel</small>
+                  </div>
+                  <div class="class-price-tag">Rs 2,500</div>
+                </div>
+                <ul class="mt-2 mb-0 ps-3" style="font-size:.8rem;color:var(--pr-gray)">
+                  <li>Air conditioned</li>
+                  <li>Reclining leather seats</li>
+                  <li>Complimentary meal + USB charging</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="class-select-card" tabindex="0">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <h6>AC Sleeper</h6>
+                    <small class="text-muted">Air-conditioned overnight berths</small>
+                  </div>
+                  <div class="class-price-tag">Rs 3,200</div>
+                </div>
+                <ul class="mt-2 mb-0 ps-3" style="font-size:.8rem;color:var(--pr-gray)">
+                  <li>AC berths with bedding</li>
+                  <li>Lockable compartment</li>
+                  <li>Breakfast included</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-2 mt-4">
+            <button class="btn-pr-outline" data-prev-step><i class="fa fa-arrow-left me-1"></i> Back</button>
+            <button class="btn-pr-primary" data-next-step>Continue to Seats <i class="fa fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2: Select Seats -->
+        <div class="booking-panel bg-white rounded-3 p-4 border" data-step="2" style="display:none">
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem"><i class="fa fa-chair me-2 text-green"></i>Select Your Seat(s)</h2>
+
+          <div class="d-flex gap-4 mb-3 flex-wrap">
+            <div class="d-flex align-items-center gap-1"><div class="seat available" style="width:20px;height:20px;font-size:0;cursor:default"></div><small class="text-muted">Available</small></div>
+            <div class="d-flex align-items-center gap-1"><div class="seat selected" style="width:20px;height:20px;font-size:0;cursor:default"></div><small class="text-muted">Selected</small></div>
+            <div class="d-flex align-items-center gap-1"><div class="seat occupied" style="width:20px;height:20px;font-size:0;cursor:default"></div><small class="text-muted">Occupied</small></div>
+          </div>
+
+          <p class="text-muted mb-3" style="font-size:.85rem">Coach A – Economy Class</p>
+
+          <div id="seatGrid" class="seat-grid" role="group" aria-label="Seat selection grid">
+            <!-- Row 1 -->
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat A1, available">A1</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat A2, available">A2</div>
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat A3, occupied" aria-disabled="true">A3</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat A4, available">A4</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat A5, available">A5</div>
+            <!-- Row 2 -->
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat B1, occupied" aria-disabled="true">B1</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat B2, available">B2</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat B3, available">B3</div>
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat B4, occupied" aria-disabled="true">B4</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat B5, available">B5</div>
+            <!-- Row 3 -->
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat C1, available">C1</div>
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat C2, occupied" aria-disabled="true">C2</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat C3, available">C3</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat C4, available">C4</div>
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat C5, occupied" aria-disabled="true">C5</div>
+            <!-- Row 4 -->
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat D1, available">D1</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat D2, available">D2</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat D3, available">D3</div>
+            <div class="seat occupied" role="button" tabindex="0" aria-label="Seat D4, occupied" aria-disabled="true">D4</div>
+            <div class="seat available" role="button" tabindex="0" aria-label="Seat D5, available">D5</div>
+          </div>
+
+          <div id="seatCounter" class="mt-3 text-muted" aria-live="polite" style="font-size:.85rem">0 seats selected</div>
+
+          <div class="d-flex gap-2 mt-4">
+            <button class="btn-pr-outline" data-prev-step><i class="fa fa-arrow-left me-1"></i> Back</button>
+            <button class="btn-pr-primary" data-next-step>Continue to Payment <i class="fa fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3: Payment -->
+        <div class="booking-panel bg-white rounded-3 p-4 border" data-step="3" style="display:none">
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem"><i class="fa fa-credit-card me-2 text-green"></i>Payment Details</h2>
+
+          <div class="alert alert-success py-2 mb-4 d-flex align-items-center gap-2">
+            <i class="fa fa-shield-alt"></i>
+            <small>Your payment is secured with 256-bit SSL encryption. PCI-DSS compliant.</small>
+          </div>
+
+          <form id="paymentForm" novalidate>
+            <!-- Passenger -->
+            <h6 class="text-muted text-uppercase" style="font-size:.78rem;letter-spacing:.05em;margin-bottom:.75rem">Passenger Information</h6>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <label for="paxName" class="form-label">Full Name (as on CNIC)</label>
+                <input type="text" class="form-control" id="paxName" placeholder="e.g. Muhammad Ali Khan" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="paxCNIC" class="form-label">CNIC Number</label>
+                <input type="text" class="form-control" id="paxCNIC" placeholder="12345-6789012-3" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="paxPhone" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="paxPhone" placeholder="+92 3XX XXXXXXX" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="paxEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="paxEmail" placeholder="email@example.com" required />
+              </div>
+            </div>
+
+            <!-- Payment Method -->
+            <h6 class="text-muted text-uppercase" style="font-size:.78rem;letter-spacing:.05em;margin-bottom:.75rem">Payment Method</h6>
+            <div class="row g-2 mb-3">
+              <div class="col-4"><div class="class-select-card selected text-center py-3" style="padding:1rem"><i class="fa fa-credit-card fa-lg mb-1 d-block text-green"></i><small style="font-size:.75rem;font-weight:600">Credit / Debit Card</small></div></div>
+              <div class="col-4"><div class="class-select-card text-center py-3" style="padding:1rem"><i class="fa fa-mobile-alt fa-lg mb-1 d-block text-green"></i><small style="font-size:.75rem;font-weight:600">JazzCash / Easypaisa</small></div></div>
+              <div class="col-4"><div class="class-select-card text-center py-3" style="padding:1rem"><i class="fa fa-university fa-lg mb-1 d-block text-green"></i><small style="font-size:.75rem;font-weight:600">Internet Banking</small></div></div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <label for="cardNo" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNo" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="cardExp" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="cardExp" placeholder="MM / YY" required />
+              </div>
+              <div class="col-sm-6">
+                <label for="cardCVV" class="form-label">CVV <i class="fa fa-question-circle text-muted" data-bs-toggle="tooltip" title="3-digit security code on back of card"></i></label>
+                <input type="text" class="form-control" id="cardCVV" placeholder="XXX" maxlength="3" required />
+              </div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="agreeTerms" required />
+              <label class="form-check-label" for="agreeTerms" style="font-size:.875rem">
+                I agree to the <a href="#" class="text-green">Terms &amp; Conditions</a> and <a href="#" class="text-green">Cancellation Policy</a>.
+              </label>
+            </div>
+
+            <div id="bookingResult"></div>
+
+            <div class="d-flex gap-2">
+              <button type="button" class="btn-pr-outline" data-prev-step><i class="fa fa-arrow-left me-1"></i> Back</button>
+              <button type="submit" class="btn-pr-gold flex-fill" style="justify-content:center" id="payBtn">
+                <i class="fa fa-lock me-2"></i> Confirm &amp; Pay Rs 900
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Booking Summary -->
+      <div class="col-lg-4">
+        <div class="bg-white rounded-3 p-4 border" style="position:sticky;top:80px">
+          <h3 style="font-size:1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--pr-gray-light)">
+            <i class="fa fa-clipboard me-2 text-green"></i> Booking Summary
+          </h3>
+          <div style="font-size:.875rem">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Train</span>
+              <strong>14 DN Karachi Express</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">From</span>
+              <strong>Karachi City</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">To</span>
+              <strong>Lahore Junction</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Date</span>
+              <strong>22 May 2026</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Class</span>
+              <strong>Economy</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Passengers</span>
+              <strong>1 Adult</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Seats</span>
+              <strong id="summarySeats">Not selected</strong>
+            </div>
+            <hr style="border-color:var(--pr-gray-light)"/>
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Base Fare</span>
+              <span>Rs 900</span>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Service Fee</span>
+              <span>Rs 50</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted">Taxes</span>
+              <span>Rs 45</span>
+            </div>
+            <div class="d-flex justify-content-between fw-700 pt-2" style="border-top:1px solid var(--pr-gray-light);font-size:1rem">
+              <span><strong>Total</strong></span>
+              <span style="color:var(--pr-green)"><strong>Rs 995</strong></span>
+            </div>
+          </div>
+
+          <div class="mt-3 p-2 rounded" style="background:rgba(0,168,85,.06);border:1px solid rgba(0,168,85,.15);font-size:.78rem;color:#00a855">
+            <i class="fa fa-tag me-1"></i> <strong>Student Discount available!</strong> Enter code STUDENT15 at checkout for 15% off.
+          </div>
+
+          <div class="mt-3 p-2 rounded" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);font-size:.78rem;color:var(--pr-gray)">
+            <i class="fa fa-undo-alt me-1 text-green"></i> Free cancellation up to 2 hours before departure.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cancel Ticket section -->
+    <div id="cancel" class="mt-5 bg-white rounded-3 p-4 border">
+      <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1.25rem" id="cancel-heading">
+        <i class="fa fa-times-circle me-2 text-green"></i> Cancel / Modify Ticket
+      </h2>
+      <p class="text-muted" style="font-size:.875rem">Enter your PNR number to retrieve your booking and request a cancellation or modification.</p>
+      <form id="cancelForm" class="row g-3 align-items-end" novalidate>
+        <div class="col-sm-5">
+          <label for="cancelPNR" class="form-label">PNR / Booking Reference</label>
+          <input type="text" class="form-control" id="cancelPNR" placeholder="e.g. PKR2024123456" required />
+        </div>
+        <div class="col-sm-4">
+          <label for="cancelCNIC" class="form-label">Last 4 digits of CNIC</label>
+          <input type="text" class="form-control" id="cancelCNIC" placeholder="e.g. 1234" maxlength="4" required />
+        </div>
+        <div class="col-sm-3">
+          <button type="submit" class="btn-pr-primary w-100" style="justify-content:center">
+            <i class="fa fa-search me-1"></i> Find Booking
+          </button>
+        </div>
+      </form>
+      <div id="cancelResult" aria-live="polite"></div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-bottom text-center py-3">© 2026 Pakistan Railways – Ministry of Railways, Government of Pakistan</div>
+  </div>
+</footer>
+
+<div class="a11y-panel">
+  <div class="a11y-sub-panel" id="a11ySubPanel">
+    <div class="a11y-tooltip"><span class="a11y-label">High Contrast</span>
+      <button class="a11y-btn a11y-btn-secondary" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false"><i class="fa fa-adjust"></i></button>
+    </div>
+    <div class="a11y-tooltip"><span class="a11y-label">Large Text</span>
+      <button class="a11y-btn a11y-btn-secondary" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false"><i class="fa fa-text-height"></i></button>
+    </div>
+  </div>
+  <button class="a11y-btn a11y-btn-main" id="a11yToggle" aria-label="Accessibility options" aria-expanded="false"><i class="fa fa-universal-access"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Payment form with feedback
+  const payForm = document.getElementById('paymentForm');
+  if (payForm) {
+    payForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!payForm.checkValidity()) { payForm.classList.add('was-validated'); return; }
+      const btn = document.getElementById('payBtn');
+      if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fa fa-spinner fa-spin me-2"></i>Processing...'; }
+      setTimeout(() => {
+        const result = document.getElementById('bookingResult');
+        if (result) {
+          result.innerHTML = `<div class="alert alert-success mb-3">
+            <strong><i class="fa fa-check-circle me-2"></i>Booking Confirmed!</strong><br>
+            PNR: <strong>PKR2026${Math.floor(Math.random()*900000+100000)}</strong> — Your e-ticket has been sent to your email and phone.
+            <div class="mt-2"><a href="passenger.html#pnr" class="alert-link">Check booking status</a></div>
+          </div>`;
+          result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fa fa-lock me-2"></i>Confirm &amp; Pay Rs 900'; }
+      }, 2000);
+    });
+  }
+
+  // Format card number
+  const cardNo = document.getElementById('cardNo');
+  if (cardNo) {
+    cardNo.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g,'').substring(0,16);
+      e.target.value = v.replace(/(.{4})/g,'$1 ').trim();
+    });
+  }
+});
+</script>
+</body>
+</html>

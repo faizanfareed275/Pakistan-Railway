@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakistan Railways – Connecting Pakistan</title>
+  <meta name="description" content="Pakistan Railways – Book train tickets, check schedules, and travel in comfort across Pakistan." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:117"><i class="fa fa-phone-alt me-1"></i>Helpline: 117</a>
+        <span class="divider"></span>
+        <a href="mailto:info@pakrail.gov.pk"><i class="fa fa-envelope me-1"></i>info@pakrail.gov.pk</a>
+        <span class="divider d-none d-sm-inline-block"></span>
+        <span class="d-none d-sm-inline"><i class="fa fa-clock me-1"></i>Online Booking: 24/7</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="passenger.html"><i class="fa fa-user me-1"></i>Passenger Login</a>
+        <span class="divider"></span>
+        <a href="#"><i class="fa fa-globe me-1"></i>اردو</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="Pakistan Railways Home">
+      <div class="brand-logo">
+        <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">Pakistan Railways</span>
+        <span class="brand-urdu">پاکستان ریلویز</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trains &amp; Schedules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="schedule.html"><i class="fa fa-calendar me-2"></i>Train Schedule</a></li>
+            <li><a class="dropdown-item" href="schedule.html#live"><i class="fa fa-satellite-dish me-2"></i>Live Train Status</a></li>
+            <li><a class="dropdown-item" href="schedule.html#routes"><i class="fa fa-route me-2"></i>Routes &amp; Fares</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="about.html"><i class="fa fa-train me-2"></i>About Our Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Ticket</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger Info</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="passenger.html"><i class="fa fa-user me-2"></i>Passenger Services</a></li>
+            <li><a class="dropdown-item" href="passenger.html#pnr"><i class="fa fa-search me-2"></i>Check PNR Status</a></li>
+            <li><a class="dropdown-item" href="passenger.html#cancel"><i class="fa fa-times-circle me-2"></i>Cancel Ticket</a></li>
+            <li><a class="dropdown-item" href="passenger.html#luggage"><i class="fa fa-suitcase me-2"></i>Luggage Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="booking.html" class="btn-pr-gold">
+          <i class="fa fa-ticket-alt"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- Hero -->
+<section class="hero-section" aria-labelledby="hero-heading">
+  <div class="hero-bg-pattern"></div>
+  <svg class="hero-train-silhouette" viewBox="0 0 800 250" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="50" y="60" width="700" height="130" rx="20" fill="white"/>
+    <rect x="70" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="150" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="230" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="310" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="390" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="470" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="550" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <rect x="630" y="80" width="60" height="60" rx="5" fill="white" opacity="0.5"/>
+    <circle cx="130" cy="200" r="30" fill="white"/>
+    <circle cx="670" cy="200" r="30" fill="white"/>
+    <circle cx="330" cy="200" r="30" fill="white"/>
+    <circle cx="470" cy="200" r="30" fill="white"/>
+    <rect x="30" y="185" width="760" height="10" rx="5" fill="white"/>
+  </svg>
+
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 hero-content">
+        <div class="hero-badge"><i class="fa fa-train"></i> Connecting Pakistan Since 1861</div>
+        <h1 class="hero-title" id="hero-heading">Travel Smart,<br>Travel <span class="highlight">Pakistan Railways</span></h1>
+        <p class="hero-subtitle">Book your train tickets online, track your journey in real-time, and explore Pakistan's vast rail network — all in one place.</p>
+        <div class="hero-stats" aria-label="Key statistics">
+          <div class="hero-stat">
+            <div class="hero-stat-number">65+</div>
+            <div class="hero-stat-label">Daily Trains</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">8,000+</div>
+            <div class="hero-stat-label">Route KMs</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">500+</div>
+            <div class="hero-stat-label">Stations</div>
+          </div>
+        </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="booking.html" class="btn-hero-primary"><i class="fa fa-ticket-alt"></i> Book a Ticket</a>
+          <a href="schedule.html" class="btn-hero-outline"><i class="fa fa-calendar-alt"></i> View Schedules</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="search-card" role="search" aria-label="Train search">
+          <div class="search-card-title"><i class="fa fa-search-location"></i> Find Your Train</div>
+
+          <div class="trip-type-tabs" role="tablist" aria-label="Trip type">
+            <button class="trip-tab active" role="tab" aria-selected="true" data-tab="one-way">One Way</button>
+            <button class="trip-tab" role="tab" aria-selected="false" data-tab="return">Return</button>
+            <button class="trip-tab" role="tab" aria-selected="false" data-tab="multi">Multi-City</button>
+          </div>
+
+          <form id="searchForm" action="schedule.html" method="get" novalidate>
+            <div class="d-flex align-items-end gap-2 mb-3">
+              <div class="flex-fill">
+                <label for="fromStation" class="form-label">From</label>
+                <select class="form-select" id="fromStation" name="from" required>
+                  <option value="">Select Departure</option>
+                  <option value="khi">Karachi City</option>
+                  <option value="lhr">Lahore Junction</option>
+                  <option value="rwp">Rawalpindi</option>
+                  <option value="isl">Islamabad</option>
+                  <option value="psh">Peshawar Cantonment</option>
+                  <option value="qta">Quetta</option>
+                  <option value="mul">Multan Cantonment</option>
+                  <option value="fsd">Faisalabad</option>
+                  <option value="swi">Sukkur</option>
+                  <option value="hyb">Hyderabad</option>
+                </select>
+              </div>
+              <button type="button" class="swap-btn mb-1" id="swapStations" aria-label="Swap stations" title="Swap stations">
+                <i class="fa fa-exchange-alt"></i>
+              </button>
+              <div class="flex-fill">
+                <label for="toStation" class="form-label">To</label>
+                <select class="form-select" id="toStation" name="to" required>
+                  <option value="">Select Destination</option>
+                  <option value="khi">Karachi City</option>
+                  <option value="lhr">Lahore Junction</option>
+                  <option value="rwp">Rawalpindi</option>
+                  <option value="isl">Islamabad</option>
+                  <option value="psh">Peshawar Cantonment</option>
+                  <option value="qta">Quetta</option>
+                  <option value="mul">Multan Cantonment</option>
+                  <option value="fsd">Faisalabad</option>
+                  <option value="swi">Sukkur</option>
+                  <option value="hyb">Hyderabad</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="journeyDate" class="form-label">Departure Date</label>
+                <input type="date" class="form-control" id="journeyDate" name="date" required />
+              </div>
+              <div class="col-6" id="returnDateCol" style="display:none">
+                <label for="returnDate" class="form-label">Return Date</label>
+                <input type="date" class="form-control" id="returnDate" name="returnDate" />
+              </div>
+              <div class="col-6" id="passengersCol">
+                <label for="passengers" class="form-label">Passengers</label>
+                <select class="form-select" id="passengers" name="passengers">
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4+ Adults</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="trainClass" class="form-label">Class</label>
+                <select class="form-select" id="trainClass" name="class">
+                  <option value="any">Any Class</option>
+                  <option value="ac">AC Business</option>
+                  <option value="ac-sleeper">AC Sleeper</option>
+                  <option value="economy">Economy</option>
+                  <option value="sleeper">Sleeper</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-search"><i class="fa fa-search"></i> Search Trains</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Access -->
+<div class="quick-access" aria-label="Quick links">
+  <div class="container">
+    <div class="d-flex gap-2 overflow-auto py-1">
+      <a href="passenger.html#pnr" class="quick-item"><i class="fa fa-search"></i> Check PNR</a>
+      <a href="schedule.html#live" class="quick-item"><i class="fa fa-satellite-dish"></i> Live Status</a>
+      <a href="booking.html#cancel" class="quick-item"><i class="fa fa-ticket-alt"></i> Cancel Ticket</a>
+      <a href="schedule.html#routes" class="quick-item"><i class="fa fa-map-marked-alt"></i> Fare Chart</a>
+      <a href="passenger.html#luggage" class="quick-item"><i class="fa fa-suitcase"></i> Luggage Policy</a>
+      <a href="about.html#freight" class="quick-item"><i class="fa fa-truck"></i> Freight Services</a>
+      <a href="contact.html" class="quick-item"><i class="fa fa-headset"></i> Support</a>
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section-pad bg-white" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="services-heading">Our Services</h2>
+      <p class="section-subtitle">Everything you need for a seamless rail journey</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-ticket-alt"></i></div>
+          <h5>Online Booking</h5>
+          <p>Book tickets 24/7 from anywhere. Instant confirmation and e-ticket delivery to your email or phone.</p>
+          <a href="booking.html" class="btn-news-link mt-3">Book Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-satellite-dish"></i></div>
+          <h5>Live Train Tracking</h5>
+          <p>Track your train in real-time, get arrival/departure updates and plan your journey with confidence.</p>
+          <a href="schedule.html#live" class="btn-news-link mt-3">Track Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-users"></i></div>
+          <h5>Group Travel</h5>
+          <p>Special rates and reserved coaches for groups of 10 or more. Ideal for families, tours, and corporates.</p>
+          <a href="contact.html" class="btn-news-link mt-3">Enquire <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-wheelchair"></i></div>
+          <h5>Accessible Travel</h5>
+          <p>Dedicated seating, ramps, and assistance for passengers with disabilities on all major routes.</p>
+          <a href="passenger.html#accessibility" class="btn-news-link mt-3">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-utensils"></i></div>
+          <h5>Onboard Catering</h5>
+          <p>Hot meals, snacks, and beverages served onboard. Pre-order your meal when booking premium trains.</p>
+          <a href="passenger.html#catering" class="btn-news-link mt-3">See Menu <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-suitcase"></i></div>
+          <h5>Luggage Services</h5>
+          <p>Send luggage ahead with our parcel service. Track parcels online with your receipt number.</p>
+          <a href="passenger.html#luggage" class="btn-news-link mt-3">Details <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-truck"></i></div>
+          <h5>Freight &amp; Cargo</h5>
+          <p>Reliable goods transportation across Pakistan. Competitive rates for commercial and bulk cargo.</p>
+          <a href="about.html#freight" class="btn-news-link mt-3">Get Quote <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="service-card" tabindex="0">
+          <div class="service-icon"><i class="fa fa-star"></i></div>
+          <h5>Loyalty Program</h5>
+          <p>Earn points on every journey and redeem them for free tickets, upgrades, and exclusive discounts.</p>
+          <a href="passenger.html#loyalty" class="btn-news-link mt-3">Join Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section" aria-label="Key statistics">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-number" data-target="65">65+</div>
+          <div class="stat-label">Express Trains Daily</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-number" data-target="8000">8,000+</div>
+          <div class="stat-label">Route Kilometres</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-number" data-target="500">500+</div>
+          <div class="stat-label">Stations Nationwide</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <div class="stat-number">3M+</div>
+          <div class="stat-label">Monthly Passengers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Classes -->
+<section class="section-pad" style="background:var(--pr-off-white)" aria-labelledby="classes-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="classes-heading">Travel Classes</h2>
+      <p class="section-subtitle">Choose the comfort level that suits your journey</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="class-card">
+          <div class="class-card-header ac"><i class="fa fa-snowflake me-2"></i> AC Business</div>
+          <div class="class-card-body">
+            <div class="class-feature"><i class="fa fa-check"></i> Air Conditioned Cabin</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Reclining Leather Seats</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Complimentary Meal</div>
+            <div class="class-feature"><i class="fa fa-check"></i> USB Charging Points</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Priority Boarding</div>
+            <div class="class-price">From <strong>Rs 2,500</strong> / seat</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="class-card">
+          <div class="class-card-header ac-sleeper"><i class="fa fa-moon me-2"></i> AC Sleeper</div>
+          <div class="class-card-body">
+            <div class="class-feature"><i class="fa fa-check"></i> Fully Air Conditioned</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Berths with Bedding</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Lockable Compartment</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Breakfast Included</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Reading Lights</div>
+            <div class="class-price">From <strong>Rs 3,200</strong> / berth</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="class-card">
+          <div class="class-card-header economy"><i class="fa fa-couch me-2"></i> Economy Class</div>
+          <div class="class-card-body">
+            <div class="class-feature"><i class="fa fa-check"></i> Comfortable Seating</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Ceiling Fans</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Food Service Available</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Generous Legroom</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Luggage Racks</div>
+            <div class="class-price">From <strong>Rs 900</strong> / seat</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="class-card">
+          <div class="class-card-header sleeper"><i class="fa fa-bed me-2"></i> Sleeper Class</div>
+          <div class="class-card-body">
+            <div class="class-feature"><i class="fa fa-check"></i> Sleeping Berths</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Budget-Friendly</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Overhead Fans</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Shared Compartment</div>
+            <div class="class-feature"><i class="fa fa-check"></i> Canteen Access</div>
+            <div class="class-price">From <strong>Rs 1,200</strong> / berth</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="booking.html" class="btn-pr-primary">Compare All Classes &amp; Book <i class="fa fa-arrow-right ms-1"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Live Departures -->
+<section class="section-pad bg-white" aria-labelledby="departures-heading">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 gap-3">
+      <div>
+        <h2 class="section-title mb-1" id="departures-heading">Live Departures – Karachi</h2>
+        <div class="live-indicator" aria-live="polite"><span class="live-dot"></span> Updating live</div>
+      </div>
+      <a href="schedule.html#live" class="btn-pr-outline"><i class="fa fa-satellite-dish"></i> Full Live Board</a>
+    </div>
+    <div class="departure-table-wrap">
+      <table class="table departure-table mb-0" aria-label="Departures from Karachi">
+        <thead>
+          <tr>
+            <th scope="col">Train</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Departs</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody id="departuresTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Routes -->
+<section class="section-pad" style="background:var(--pr-off-white)" aria-labelledby="routes-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="routes-heading">Popular Routes</h2>
+      <p class="section-subtitle">Most-travelled corridors with the best connections</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=khi&to=lhr" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Karachi → Lahore</div>
+            <div class="route-detail">From Rs 1,200 · ~18 hrs · 5 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=lhr&to=rwp" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Lahore → Rawalpindi</div>
+            <div class="route-detail">From Rs 500 · ~5 hrs · 8 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=khi&to=psh" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Karachi → Peshawar</div>
+            <div class="route-detail">From Rs 1,600 · ~24 hrs · 3 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=rwp&to=psh" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Rawalpindi → Peshawar</div>
+            <div class="route-detail">From Rs 350 · ~3 hrs · 10 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=khi&to=qta" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Karachi → Quetta</div>
+            <div class="route-detail">From Rs 1,100 · ~20 hrs · 2 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="schedule.html?from=mul&to=lhr" class="route-card text-decoration-none">
+          <div class="route-icon"><i class="fa fa-train"></i></div>
+          <div class="route-info">
+            <div class="route-name">Multan → Lahore</div>
+            <div class="route-detail">From Rs 650 · ~5 hrs · 6 daily trains</div>
+          </div>
+          <div class="route-arrow"><i class="fa fa-chevron-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Strip -->
+<div class="info-strip">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="info-item">
+          <div class="info-item-icon"><i class="fa fa-shield-alt"></i></div>
+          <div class="info-item-text">
+            <h6>Safe &amp; Secure Payments</h6>
+            <p>PCI-DSS compliant gateway. Your financial data is always protected.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info-item">
+          <div class="info-item-icon"><i class="fa fa-bolt"></i></div>
+          <div class="info-item-text">
+            <h6>Instant Confirmation</h6>
+            <p>Receive your e-ticket via SMS and email within seconds of booking.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info-item">
+          <div class="info-item-icon"><i class="fa fa-undo-alt"></i></div>
+          <div class="info-item-text">
+            <h6>Easy Cancellations</h6>
+            <p>Cancel online up to 2 hrs before departure. Refund within 72 hrs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info-item">
+          <div class="info-item-icon"><i class="fa fa-headset"></i></div>
+          <div class="info-item-text">
+            <h6>24/7 Support</h6>
+            <p>Our helpline 117 is open round the clock for all travel queries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+<section class="section-pad bg-white" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="testimonials-heading">What Passengers Say</h2>
+      <p class="section-subtitle">Real feedback from our valued travellers</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">
+            <i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i>
+          </div>
+          <p class="testimonial-text">"The AC Business class on the Karachi Express was exceptional. The booking process is so much easier now — I booked in under 3 minutes and the e-ticket arrived instantly!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div><div class="author-name">Ahmed Khan</div><div class="author-route">Karachi → Lahore</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="testimonial-rating" aria-label="4 out of 5 stars">
+            <i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-empty"></i>
+          </div>
+          <p class="testimonial-text">"Travelling with my family from Lahore to Peshawar was very comfortable. Love the real-time train tracking — it kept us updated throughout the entire journey!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#7b3f00">FH</div>
+            <div><div class="author-name">Fatima Hussain</div><div class="author-route">Lahore → Peshawar</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">
+            <i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i><i class="fa fa-star star-full"></i>
+          </div>
+          <p class="testimonial-text">"As a senior citizen, I appreciate the accessibility features and helpful staff. The new website is easy to read and simple to navigate. Highly recommended for all!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#245a8a">MR</div>
+            <div><div class="author-name">Muhammad Raza</div><div class="author-route">Rawalpindi → Karachi</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section class="section-pad" style="background:var(--pr-off-white)" aria-labelledby="news-heading">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 gap-3">
+      <div>
+        <h2 class="section-title mb-1" id="news-heading">News &amp; Announcements</h2>
+        <p class="section-subtitle mb-0">Latest updates from Pakistan Railways</p>
+      </div>
+      <a href="about.html#news" class="btn-pr-outline">All News <i class="fa fa-arrow-right ms-1"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="news-card">
+          <div class="news-img-wrap">
+            <i class="fa fa-train news-img-icon"></i>
+            <span class="news-category">New Service</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa fa-calendar-alt"></i> 15 May 2026</div>
+            <h3 class="news-title">Green Line Express Extended to Peshawar</h3>
+            <p class="news-excerpt">The premium Green Line service has been extended, offering daily AC Business class travel with improved on-time performance and upgraded amenities.</p>
+            <a href="about.html#news" class="btn-news-link">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="news-card">
+          <div class="news-img-wrap" style="background:linear-gradient(135deg,#1a3a5c,#245a8a)">
+            <i class="fa fa-mobile-alt news-img-icon"></i>
+            <span class="news-category">Digital</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa fa-calendar-alt"></i> 10 May 2026</div>
+            <h3 class="news-title">New Mobile App Launched for Seamless Ticket Booking</h3>
+            <p class="news-excerpt">Pakistan Railways launches its redesigned mobile application for Android and iOS, featuring biometric login, digital tickets, and real-time tracking.</p>
+            <a href="about.html#news" class="btn-news-link">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="news-card">
+          <div class="news-img-wrap" style="background:linear-gradient(135deg,#5a2d0c,#8b4513)">
+            <i class="fa fa-tools news-img-icon"></i>
+            <span class="news-category">Infrastructure</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa fa-calendar-alt"></i> 5 May 2026</div>
+            <h3 class="news-title">ML-1 Modernisation Project: First Phase Complete</h3>
+            <p class="news-excerpt">Major upgrades to Main Line 1 are complete, enabling higher speed operations between Karachi, Lahore, and Peshawar with reduced journey times.</p>
+            <a href="about.html#news" class="btn-news-link">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- App Download -->
+<section class="app-section" aria-labelledby="app-heading">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <div class="hero-badge mb-4"><i class="fa fa-mobile-alt"></i> Mobile App</div>
+        <h2 class="section-title text-white mb-3" id="app-heading">Pakistan Railways in Your Pocket</h2>
+        <p style="color:rgba(255,255,255,0.7);font-size:1rem;margin-bottom:2rem;max-width:480px" class="mx-auto mx-lg-0">
+          Download the official app to book tickets, track trains, manage bookings, and get live alerts — all on the go.
+        </p>
+        <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+          <a href="#" class="store-btn" aria-label="Download on App Store">
+            <i class="fab fa-apple"></i>
+            <div class="store-btn-text"><small>Download on the</small><strong>App Store</strong></div>
+          </a>
+          <a href="#" class="store-btn" aria-label="Get it on Google Play">
+            <i class="fab fa-google-play"></i>
+            <div class="store-btn-text"><small>Get it on</small><strong>Google Play</strong></div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="app-mockup" aria-hidden="true">
+          <div class="app-screen-row">
+            <div class="app-screen-icon"><i class="fa fa-ticket-alt"></i></div>
+            <div class="app-screen-text"><strong>Booking Confirmed</strong><p>Lahore → Karachi | 2 adults</p></div>
+          </div>
+          <div class="app-screen-row">
+            <div class="app-screen-icon" style="background:#0d6efd"><i class="fa fa-map-marker-alt"></i></div>
+            <div class="app-screen-text"><strong>Train on Track</strong><p>~45 min from Lahore</p></div>
+          </div>
+          <div class="app-screen-row">
+            <div class="app-screen-icon" style="background:#00a855"><i class="fa fa-check-circle"></i></div>
+            <div class="app-screen-text"><strong>E-Ticket Ready</strong><p>Scan at platform gate</p></div>
+          </div>
+          <div class="app-screen-row">
+            <div class="app-screen-icon" style="background:#e63946"><i class="fa fa-bell"></i></div>
+            <div class="app-screen-text"><strong>Departure Alert</strong><p>Your train departs in 30 mins</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="main-footer" role="contentinfo">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4">
+        <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+          <div class="brand-logo" style="width:40px;height:40px">
+            <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+          </div>
+          <div>
+            <span class="footer-brand-name">Pakistan Railways</span>
+            <div class="footer-tagline">پاکستان ریلویز</div>
+          </div>
+        </div>
+        <p class="footer-desc">Pakistan Railways is the national rail operator connecting major cities and towns across the country. Serving passengers since 1861 with safety, reliability, and comfort.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h3 class="footer-heading">Travel</h3>
+        <ul class="footer-links">
+          <li><a href="booking.html"><i class="fa fa-chevron-right"></i> Book Tickets</a></li>
+          <li><a href="schedule.html"><i class="fa fa-chevron-right"></i> Train Schedule</a></li>
+          <li><a href="passenger.html#pnr"><i class="fa fa-chevron-right"></i> PNR Status</a></li>
+          <li><a href="schedule.html#routes"><i class="fa fa-chevron-right"></i> Fare Chart</a></li>
+          <li><a href="booking.html#cancel"><i class="fa fa-chevron-right"></i> Cancel Ticket</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <h3 class="footer-heading">Information</h3>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa fa-chevron-right"></i> About Us</a></li>
+          <li><a href="passenger.html#luggage"><i class="fa fa-chevron-right"></i> Luggage Policy</a></li>
+          <li><a href="passenger.html#accessibility"><i class="fa fa-chevron-right"></i> Accessibility</a></li>
+          <li><a href="about.html#freight"><i class="fa fa-chevron-right"></i> Freight</a></li>
+          <li><a href="about.html#news"><i class="fa fa-chevron-right"></i> News</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <h3 class="footer-heading">Contact Us</h3>
+        <div class="footer-contact-item"><i class="fa fa-phone-alt"></i><span>Helpline: <strong style="color:rgba(255,255,255,0.7)">117</strong></span></div>
+        <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>info@pakrail.gov.pk</span></div>
+        <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>Pakistan Railways HQ, Empress Road, Lahore</span></div>
+        <div class="footer-contact-item"><i class="fa fa-clock"></i><span>Online: 24/7 | Office: Mon–Sat 9am–5pm</span></div>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>© 2026 Pakistan Railways – Ministry of Railways, Government of Pakistan</span>
+      <div class="d-flex gap-3">
+        <a href="#" style="color:inherit">Privacy Policy</a>
+        <a href="#" style="color:inherit">Terms of Use</a>
+        <a href="#" style="color:inherit">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Accessibility Panel -->
+<div class="a11y-panel" role="region" aria-label="Accessibility controls">
+  <div class="a11y-sub-panel" id="a11ySubPanel">
+    <div class="a11y-tooltip">
+      <span class="a11y-label">High Contrast</span>
+      <button class="a11y-btn a11y-btn-secondary" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false">
+        <i class="fa fa-adjust"></i>
+      </button>
+    </div>
+    <div class="a11y-tooltip">
+      <span class="a11y-label">Large Text</span>
+      <button class="a11y-btn a11y-btn-secondary" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false">
+        <i class="fa fa-text-height"></i>
+      </button>
+    </div>
+  </div>
+  <button class="a11y-btn a11y-btn-main" id="a11yToggle" aria-label="Accessibility options" aria-expanded="false">
+    <i class="fa fa-universal-access"></i>
+  </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>

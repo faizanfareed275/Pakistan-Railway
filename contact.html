@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Pakistan Railways</title>
+  <meta name="description" content="Contact Pakistan Railways for booking assistance, complaints, feedback, and general enquiries." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:117"><i class="fa fa-phone-alt me-1"></i>Helpline: 117</a>
+        <span class="divider"></span>
+        <a href="mailto:info@pakrail.gov.pk"><i class="fa fa-envelope me-1"></i>info@pakrail.gov.pk</a>
+        <span class="divider d-none d-sm-inline-block"></span>
+        <span class="d-none d-sm-inline"><i class="fa fa-clock me-1"></i>Online Booking: 24/7</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="passenger.html"><i class="fa fa-user me-1"></i>Passenger Login</a>
+        <span class="divider"></span>
+        <a href="#"><i class="fa fa-globe me-1"></i>اردو</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="Pakistan Railways Home">
+      <div class="brand-logo">
+        <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">Pakistan Railways</span>
+        <span class="brand-urdu">پاکستان ریلویز</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trains &amp; Schedules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="schedule.html"><i class="fa fa-calendar me-2"></i>Train Schedule</a></li>
+            <li><a class="dropdown-item" href="schedule.html#live"><i class="fa fa-satellite-dish me-2"></i>Live Train Status</a></li>
+            <li><a class="dropdown-item" href="schedule.html#routes"><i class="fa fa-route me-2"></i>Routes &amp; Fares</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="about.html"><i class="fa fa-train me-2"></i>About Our Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Ticket</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger Info</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="passenger.html"><i class="fa fa-user me-2"></i>Passenger Services</a></li>
+            <li><a class="dropdown-item" href="passenger.html#pnr"><i class="fa fa-search me-2"></i>Check PNR Status</a></li>
+            <li><a class="dropdown-item" href="passenger.html#cancel"><i class="fa fa-times-circle me-2"></i>Cancel Ticket</a></li>
+            <li><a class="dropdown-item" href="passenger.html#luggage"><i class="fa fa-suitcase me-2"></i>Luggage Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="booking.html" class="btn-pr-gold">
+          <i class="fa fa-ticket-alt"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Contact Us</li>
+    </ol></nav>
+    <h1><i class="fa fa-headset me-2"></i>Contact Us</h1>
+    <p style="color:rgba(255,255,255,.75);margin:0;font-size:1rem">We're here to help. Reach out through any of the channels below.</p>
+  </div>
+</div>
+
+<section class="section-pad bg-white">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <h2 class="section-title" style="font-size:1.5rem">Send Us a Message</h2>
+        <p class="text-muted mb-4" style="font-size:.9rem">Fill in the form and our team will respond within 24 hours on working days.</p>
+
+        <form id="contactForm" novalidate class="needs-validation">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="contactName" class="form-label">Full Name <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="contactName" placeholder="Your full name" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-sm-6">
+              <label for="contactEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="email@example.com" required />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="col-sm-6">
+              <label for="contactPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="contactPhone" placeholder="+92 3XX XXXXXXX" />
+            </div>
+            <div class="col-sm-6">
+              <label for="contactSubject" class="form-label">Subject <span class="text-danger">*</span></label>
+              <select class="form-select" id="contactSubject" required>
+                <option value="">Select a subject</option>
+                <option value="booking">Ticket Booking</option>
+                <option value="cancel">Cancellation / Refund</option>
+                <option value="schedule">Schedule Enquiry</option>
+                <option value="lost">Lost &amp; Found</option>
+                <option value="complaint">Complaint</option>
+                <option value="feedback">General Feedback</option>
+                <option value="freight">Freight Services</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="invalid-feedback">Please select a subject.</div>
+            </div>
+            <div class="col-12">
+              <label for="contactPNR" class="form-label">PNR Number <small class="text-muted">(if applicable)</small></label>
+              <input type="text" class="form-control" id="contactPNR" placeholder="PKR2024XXXXXX" />
+            </div>
+            <div class="col-12">
+              <label for="contactMessage" class="form-label">Message <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Please describe your query or issue in detail..." required style="resize:vertical"></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="agreePrivacy" required />
+                <label class="form-check-label" for="agreePrivacy" style="font-size:.875rem">
+                  I agree to the <a href="#" class="text-green">Privacy Policy</a> and consent to being contacted by Pakistan Railways.
+                </label>
+                <div class="invalid-feedback">You must agree before sending.</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="contactResult" aria-live="polite"></div>
+              <button type="submit" class="btn-pr-primary" style="min-width:160px;justify-content:center" id="contactSubmitBtn">
+                <i class="fa fa-paper-plane me-2"></i>Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <div class="col-lg-5">
+        <div style="display:flex;flex-direction:column;gap:1.25rem">
+
+          <!-- Emergency -->
+          <div class="p-4 rounded-3" style="background:linear-gradient(135deg,var(--pr-green-dark),var(--pr-green));color:white">
+            <h3 style="font-size:1rem;font-weight:700;color:white;margin-bottom:.75rem"><i class="fa fa-phone-alt me-2"></i>Emergency / Helpline</h3>
+            <div style="font-size:2.5rem;font-weight:800;color:var(--pr-gold-light);line-height:1">117</div>
+            <p style="font-size:.85rem;color:rgba(255,255,255,.75);margin:.5rem 0 0">Available 24 hours a day, 7 days a week</p>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1rem">Other Ways to Reach Us</h3>
+            <div class="d-flex flex-column gap-3">
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-envelope"></i></div>
+                <div class="info-item-text">
+                  <h6>Email</h6>
+                  <p><a href="mailto:info@pakrail.gov.pk" class="text-green">info@pakrail.gov.pk</a></p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-comments"></i></div>
+                <div class="info-item-text">
+                  <h6>Live Chat</h6>
+                  <p>Available on website Mon–Fri, 9am–5pm PKT</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-map-marker-alt"></i></div>
+                <div class="info-item-text">
+                  <h6>Head Office</h6>
+                  <p>Pakistan Railways HQ, Empress Road, Lahore, Punjab 54000</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-clock"></i></div>
+                <div class="info-item-text">
+                  <h6>Office Hours</h6>
+                  <p>Monday–Saturday: 9:00 AM – 5:00 PM<br>Online: 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regional Offices -->
+          <div class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:1rem;font-weight:700;color:var(--pr-dark);margin-bottom:1rem">Regional Offices</h3>
+            <div class="d-flex flex-column gap-2" style="font-size:.85rem">
+              <div class="d-flex justify-content-between py-2" style="border-bottom:1px solid var(--pr-gray-light)">
+                <strong>Karachi Division</strong><span class="text-muted">021-XXXXXXXX</span>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom:1px solid var(--pr-gray-light)">
+                <strong>Lahore Division</strong><span class="text-muted">042-XXXXXXXX</span>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom:1px solid var(--pr-gray-light)">
+                <strong>Rawalpindi Division</strong><span class="text-muted">051-XXXXXXXX</span>
+              </div>
+              <div class="d-flex justify-content-between py-2" style="border-bottom:1px solid var(--pr-gray-light)">
+                <strong>Peshawar Division</strong><span class="text-muted">091-XXXXXXXX</span>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <strong>Quetta Division</strong><span class="text-muted">081-XXXXXXXX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:1rem;font-weight:700;color:var(--pr-dark);margin-bottom:.75rem">Follow Us</h3>
+            <div class="d-flex gap-3">
+              <a href="#" aria-label="Facebook" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px;padding:.5rem .9rem;font-size:.875rem"><i class="fab fa-facebook-f me-1"></i> Facebook</a>
+              <a href="#" aria-label="Twitter" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px;padding:.5rem .9rem;font-size:.875rem"><i class="fab fa-twitter me-1"></i> Twitter</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-pad" style="background:var(--pr-off-white)" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Quick answers to common queries</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item border mb-2 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="font-weight:600;font-size:.9rem">
+                How do I book a ticket online?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                Visit the <a href="booking.html" class="text-green">Book Ticket</a> page, enter your journey details, select your train and class, choose seats, enter passenger details, and pay securely online. Your e-ticket will be sent to your email and phone instantly.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-2 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="font-weight:600;font-size:.9rem">
+                What is the cancellation and refund policy?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                Cancellations made 24+ hours before departure receive a 90% refund. Cancellations 2–24 hours before receive 50%. No refund within 2 hours of departure. Refunds are processed within 72 hours to your original payment method.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-2 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="font-weight:600;font-size:.9rem">
+                Can I travel with a printed or digital e-ticket?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                Yes, both printed and digital (on your phone) e-tickets are accepted. You must present your ticket along with a valid CNIC/passport that matches the passenger name on the ticket. No ticket transfers are permitted.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-2 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="font-weight:600;font-size:.9rem">
+                Is there a discount for children and senior citizens?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                Children under 5 travel free (no seat). Children aged 5–11 receive a 50% fare reduction. Senior citizens aged 65+ receive a 25% discount. Persons with disabilities qualify for a 50% discount with valid documentation.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border mb-2 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="font-weight:600;font-size:.9rem">
+                How do I check the status of my train?
+              </button>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                Visit the <a href="schedule.html#live" class="text-green">Live Train Status</a> page. Enter your train number or route to see real-time location, delay information, and expected arrival times. You can also opt in for SMS alerts at time of booking.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" style="font-weight:600;font-size:.9rem">
+                What are the payment methods accepted?
+              </button>
+            </h3>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted" style="font-size:.875rem">
+                We accept Visa, Mastercard, HBL, MCB, and UBL debit/credit cards, JazzCash, Easypaisa, and internet banking from all major Pakistani banks. All online payments are secured with 256-bit SSL encryption.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-bottom text-center py-3">© 2026 Pakistan Railways – Ministry of Railways, Government of Pakistan</div>
+  </div>
+</footer>
+
+<div class="a11y-panel">
+  <div class="a11y-sub-panel" id="a11ySubPanel">
+    <div class="a11y-tooltip"><span class="a11y-label">High Contrast</span>
+      <button class="a11y-btn a11y-btn-secondary" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false"><i class="fa fa-adjust"></i></button>
+    </div>
+    <div class="a11y-tooltip"><span class="a11y-label">Large Text</span>
+      <button class="a11y-btn a11y-btn-secondary" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false"><i class="fa fa-text-height"></i></button>
+    </div>
+  </div>
+  <button class="a11y-btn a11y-btn-main" id="a11yToggle" aria-label="Accessibility options" aria-expanded="false"><i class="fa fa-universal-access"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>

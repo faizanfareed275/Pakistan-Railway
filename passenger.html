@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passenger Services – Pakistan Railways</title>
+  <meta name="description" content="Check PNR status, manage bookings, access luggage policy, accessibility info and passenger services on Pakistan Railways." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:117"><i class="fa fa-phone-alt me-1"></i>Helpline: 117</a>
+        <span class="divider"></span>
+        <a href="mailto:info@pakrail.gov.pk"><i class="fa fa-envelope me-1"></i>info@pakrail.gov.pk</a>
+        <span class="divider d-none d-sm-inline-block"></span>
+        <span class="d-none d-sm-inline"><i class="fa fa-clock me-1"></i>Online Booking: 24/7</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="passenger.html"><i class="fa fa-user me-1"></i>Passenger Login</a>
+        <span class="divider"></span>
+        <a href="#"><i class="fa fa-globe me-1"></i>اردو</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="Pakistan Railways Home">
+      <div class="brand-logo">
+        <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">Pakistan Railways</span>
+        <span class="brand-urdu">پاکستان ریلویز</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trains &amp; Schedules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="schedule.html"><i class="fa fa-calendar me-2"></i>Train Schedule</a></li>
+            <li><a class="dropdown-item" href="schedule.html#live"><i class="fa fa-satellite-dish me-2"></i>Live Train Status</a></li>
+            <li><a class="dropdown-item" href="schedule.html#routes"><i class="fa fa-route me-2"></i>Routes &amp; Fares</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="about.html"><i class="fa fa-train me-2"></i>About Our Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Ticket</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger Info</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="passenger.html"><i class="fa fa-user me-2"></i>Passenger Services</a></li>
+            <li><a class="dropdown-item" href="passenger.html#pnr"><i class="fa fa-search me-2"></i>Check PNR Status</a></li>
+            <li><a class="dropdown-item" href="passenger.html#cancel"><i class="fa fa-times-circle me-2"></i>Cancel Ticket</a></li>
+            <li><a class="dropdown-item" href="passenger.html#luggage"><i class="fa fa-suitcase me-2"></i>Luggage Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="booking.html" class="btn-pr-gold">
+          <i class="fa fa-ticket-alt"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<main id="main-content">
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Passenger Services</li>
+    </ol></nav>
+    <h1><i class="fa fa-user me-2"></i>Passenger Services</h1>
+    <p style="color:rgba(255,255,255,.75);margin:0;font-size:1rem">Check your PNR, manage bookings, and access all passenger information.</p>
+  </div>
+</div>
+
+<!-- Quick Links Row -->
+<div class="quick-access">
+  <div class="container">
+    <div class="d-flex gap-2 overflow-auto py-1">
+      <a href="#pnr" class="quick-item"><i class="fa fa-search"></i> Check PNR</a>
+      <a href="#cancel" class="quick-item"><i class="fa fa-times-circle"></i> Cancel Ticket</a>
+      <a href="#luggage" class="quick-item"><i class="fa fa-suitcase"></i> Luggage Policy</a>
+      <a href="#accessibility" class="quick-item"><i class="fa fa-wheelchair"></i> Accessibility</a>
+      <a href="#catering" class="quick-item"><i class="fa fa-utensils"></i> Catering</a>
+      <a href="#loyalty" class="quick-item"><i class="fa fa-star"></i> Loyalty Programme</a>
+    </div>
+  </div>
+</div>
+
+<section class="section-pad bg-white">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Main Content -->
+      <div class="col-lg-8">
+
+        <!-- PNR Check -->
+        <div id="pnr" class="mb-5">
+          <h2 class="section-title" style="font-size:1.4rem"><i class="fa fa-search me-2 text-green"></i>Check PNR Status</h2>
+          <p class="text-muted mb-3" style="font-size:.9rem">Enter your PNR or booking reference number to check the current status of your ticket.</p>
+          <form id="pnrForm" class="row g-3 align-items-end" novalidate>
+            <div class="col-sm-8">
+              <label for="pnrInput" class="form-label">PNR / Booking Reference Number</label>
+              <input type="text" class="form-control" id="pnrInput" placeholder="e.g. PKR2024123456" required />
+            </div>
+            <div class="col-sm-4">
+              <button type="submit" class="btn-pr-primary w-100" style="justify-content:center">
+                <i class="fa fa-search me-1"></i> Check Status
+              </button>
+            </div>
+          </form>
+          <div id="pnrResult" aria-live="polite"></div>
+
+          <div class="mt-4 p-3 rounded-3" style="background:var(--pr-off-white);font-size:.85rem">
+            <strong><i class="fa fa-info-circle me-1 text-green"></i> Where to find your PNR?</strong>
+            <p class="mb-0 mt-1 text-muted">Your PNR is on your e-ticket email/SMS, printed ticket, or booking confirmation screen. It starts with "PKR" followed by 10 digits.</p>
+          </div>
+        </div>
+
+        <!-- Cancel Ticket -->
+        <div id="cancel" class="mb-5 pt-3" style="border-top:1px solid var(--pr-gray-light)">
+          <h2 class="section-title" style="font-size:1.4rem"><i class="fa fa-times-circle me-2 text-green"></i>Cancel / Modify Ticket</h2>
+          <p class="text-muted mb-3" style="font-size:.9rem">You can cancel or modify your ticket online up to 2 hours before departure.</p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-4">
+              <div class="p-3 rounded-3 text-center" style="background:var(--pr-off-white);border:1px solid rgba(0,102,51,.08)">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--pr-green)">90%</div>
+                <div style="font-size:.78rem;color:var(--pr-gray)">Refund if cancelled 24+ hrs before</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 rounded-3 text-center" style="background:var(--pr-off-white);border:1px solid rgba(0,102,51,.08)">
+                <div style="font-size:1.5rem;font-weight:800;color:var(--pr-gold)">50%</div>
+                <div style="font-size:.78rem;color:var(--pr-gray)">Refund if cancelled 2–24 hrs before</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="p-3 rounded-3 text-center" style="background:var(--pr-off-white);border:1px solid rgba(0,102,51,.08)">
+                <div style="font-size:1.5rem;font-weight:800;color:#dc3545">0%</div>
+                <div style="font-size:.78rem;color:var(--pr-gray)">No refund within 2 hrs of departure</div>
+              </div>
+            </div>
+          </div>
+
+          <form id="cancelForm" class="row g-3 align-items-end" novalidate>
+            <div class="col-sm-5">
+              <label for="cancelPNR" class="form-label">PNR Number</label>
+              <input type="text" class="form-control" id="cancelPNR" placeholder="PKR2024XXXXXX" required />
+            </div>
+            <div class="col-sm-4">
+              <label for="cancelCNIC" class="form-label">Last 4 digits of CNIC</label>
+              <input type="text" class="form-control" id="cancelCNIC" maxlength="4" placeholder="XXXX" required />
+            </div>
+            <div class="col-sm-3">
+              <button type="submit" class="btn-pr-primary w-100" style="justify-content:center">
+                <i class="fa fa-search me-1"></i> Retrieve
+              </button>
+            </div>
+          </form>
+          <div id="cancelResult" aria-live="polite"></div>
+        </div>
+
+        <!-- Luggage Policy -->
+        <div id="luggage" class="mb-5 pt-3" style="border-top:1px solid var(--pr-gray-light)">
+          <h2 class="section-title" style="font-size:1.4rem"><i class="fa fa-suitcase me-2 text-green"></i>Luggage Policy</h2>
+          <div class="table-responsive mt-3">
+            <table class="table table-bordered" aria-label="Luggage allowances by class">
+              <thead style="background:var(--pr-green);color:white">
+                <tr>
+                  <th>Class</th>
+                  <th>Free Allowance</th>
+                  <th>Max. Piece Size</th>
+                  <th>Excess Charge</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Economy</td><td>40 kg</td><td>90 x 60 x 45 cm</td><td>Rs 15/kg</td></tr>
+                <tr><td>Sleeper</td><td>50 kg</td><td>90 x 60 x 45 cm</td><td>Rs 15/kg</td></tr>
+                <tr><td>AC Business</td><td>60 kg</td><td>100 x 70 x 50 cm</td><td>Rs 12/kg</td></tr>
+                <tr><td>AC Sleeper</td><td>70 kg</td><td>100 x 70 x 50 cm</td><td>Rs 12/kg</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-ban"></i></div>
+                <div class="info-item-text"><h6>Prohibited Items</h6><p>Flammable goods, explosives, live animals (without permit), hazardous chemicals, sharp weapons.</p></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-item">
+                <div class="info-item-icon"><i class="fa fa-box"></i></div>
+                <div class="info-item-text"><h6>Parcel Service</h6><p>Send luggage ahead with our parcel booking service. Track online using your receipt number.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accessibility -->
+        <div id="accessibility" class="mb-5 pt-3" style="border-top:1px solid var(--pr-gray-light)">
+          <h2 class="section-title" style="font-size:1.4rem"><i class="fa fa-wheelchair me-2 text-green"></i>Accessibility Services</h2>
+          <p class="text-muted mb-3" style="font-size:.9rem">Pakistan Railways is committed to providing accessible travel for all passengers.</p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="service-card" style="padding:1.25rem">
+                <div class="service-icon" style="width:40px;height:40px;font-size:1.1rem"><i class="fa fa-wheelchair"></i></div>
+                <h5 style="font-size:.9rem">Wheelchair Access</h5>
+                <p>Ramps at all major stations. Dedicated wheelchair spaces on all express trains.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="service-card" style="padding:1.25rem">
+                <div class="service-icon" style="width:40px;height:40px;font-size:1.1rem"><i class="fa fa-hands-helping"></i></div>
+                <h5 style="font-size:.9rem">Platform Assistance</h5>
+                <p>Request assistance at the booking counter or online. Staff will escort you to your seat.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="service-card" style="padding:1.25rem">
+                <div class="service-icon" style="width:40px;height:40px;font-size:1.1rem"><i class="fa fa-low-vision"></i></div>
+                <h5 style="font-size:.9rem">Visual Impairment</h5>
+                <p>Braille timetables available on request. Guide dogs permitted on all services.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="service-card" style="padding:1.25rem">
+                <div class="service-icon" style="width:40px;height:40px;font-size:1.1rem"><i class="fa fa-deaf"></i></div>
+                <h5 style="font-size:.9rem">Hearing Impairment</h5>
+                <p>Visual departure boards at all stations. SMS alert service available.</p>
+              </div>
+            </div>
+          </div>
+          <div class="alert mt-3" style="background:rgba(0,102,51,.06);border-left:3px solid var(--pr-green);color:var(--pr-text);font-size:.875rem">
+            <i class="fa fa-info-circle me-2 text-green"></i>
+            To pre-arrange accessibility assistance, call our dedicated helpline: <strong>117</strong> (press 3) or email <a href="mailto:accessibility@pakrail.gov.pk" class="text-green">accessibility@pakrail.gov.pk</a> at least 24 hours before travel.
+          </div>
+        </div>
+
+        <!-- Loyalty Programme -->
+        <div id="loyalty" class="mb-5 pt-3" style="border-top:1px solid var(--pr-gray-light)">
+          <h2 class="section-title" style="font-size:1.4rem"><i class="fa fa-star me-2 text-green"></i>Rail Rewards Loyalty Programme</h2>
+          <p class="text-muted mb-3" style="font-size:.9rem">Earn points on every journey and redeem them for exciting rewards.</p>
+          <div class="row g-3">
+            <div class="col-sm-4 text-center">
+              <div class="p-3 rounded-3" style="background:var(--pr-off-white);border:1px solid rgba(0,102,51,.08)">
+                <i class="fa fa-train fa-2x mb-2 text-green d-block"></i>
+                <h6 style="font-weight:700">Rail Voyager</h6>
+                <p style="font-size:.8rem;color:var(--pr-gray);margin:0">0–4,999 points<br>5% bonus on tickets</p>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <div class="p-3 rounded-3" style="background:rgba(0,102,51,.05);border:2px solid var(--pr-green)">
+                <i class="fa fa-star fa-2x mb-2 text-gold d-block" style="color:var(--pr-gold)"></i>
+                <h6 style="font-weight:700">Rail Gold</h6>
+                <p style="font-size:.8rem;color:var(--pr-gray);margin:0">5,000–14,999 points<br>10% bonus + priority boarding</p>
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <div class="p-3 rounded-3" style="background:var(--pr-off-white);border:1px solid rgba(0,102,51,.08)">
+                <i class="fa fa-crown fa-2x mb-2 d-block" style="color:#8b4513"></i>
+                <h6 style="font-weight:700">Rail Elite</h6>
+                <p style="font-size:.8rem;color:var(--pr-gray);margin:0">15,000+ points<br>20% discount + free upgrades</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <a href="booking.html" class="btn-pr-primary me-2"><i class="fa fa-user-plus me-1"></i> Join Rail Rewards</a>
+            <a href="#" class="btn-pr-outline"><i class="fa fa-info-circle me-1"></i> Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div style="position:sticky;top:80px;display:flex;flex-direction:column;gap:1.25rem">
+
+          <!-- Quick Actions -->
+          <div class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:.95rem;font-weight:700;color:var(--pr-dark);margin-bottom:1rem"><i class="fa fa-bolt me-2 text-green"></i>Quick Actions</h3>
+            <div class="d-flex flex-column gap-2">
+              <a href="booking.html" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px"><i class="fa fa-ticket-alt"></i> Book New Ticket</a>
+              <a href="schedule.html" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px"><i class="fa fa-calendar-alt"></i> View Schedule</a>
+              <a href="schedule.html#live" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px"><i class="fa fa-satellite-dish"></i> Live Train Status</a>
+              <a href="contact.html" class="quick-item" style="background:rgba(0,102,51,.04);border:1px solid rgba(0,102,51,.1);border-radius:8px"><i class="fa fa-headset"></i> Contact Support</a>
+            </div>
+          </div>
+
+          <!-- Travel Tips -->
+          <div class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:.95rem;font-weight:700;color:var(--pr-dark);margin-bottom:1rem"><i class="fa fa-lightbulb me-2 text-green"></i>Travel Tips</h3>
+            <ul style="font-size:.85rem;color:var(--pr-gray);padding-left:1.1rem;margin:0;line-height:1.8">
+              <li>Arrive at the station at least 20 minutes before departure.</li>
+              <li>Carry a valid CNIC or passport — required for ticket verification.</li>
+              <li>Download your e-ticket before travelling in low-signal areas.</li>
+              <li>Confirm seat numbers from the coach display board on the platform.</li>
+              <li>Report lost items to the Station Master immediately.</li>
+            </ul>
+          </div>
+
+          <!-- Catering -->
+          <div id="catering" class="bg-white rounded-3 p-4 border">
+            <h3 style="font-size:.95rem;font-weight:700;color:var(--pr-dark);margin-bottom:.75rem"><i class="fa fa-utensils me-2 text-green"></i>Onboard Catering</h3>
+            <p style="font-size:.85rem;color:var(--pr-gray);margin-bottom:.75rem">Available on all express trains:</p>
+            <div class="d-flex gap-2 flex-wrap" style="font-size:.78rem">
+              <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600">Breakfast</span>
+              <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600">Hot Meals</span>
+              <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600">Snacks</span>
+              <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600">Tea / Coffee</span>
+              <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600">Cold Drinks</span>
+            </div>
+            <p style="font-size:.8rem;color:var(--pr-gray);margin-top:.75rem;margin-bottom:0">Pre-order available for AC class. Contact catering at time of booking.</p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="bg-white rounded-3 p-4 border" style="border-left:3px solid var(--pr-green)!important">
+            <h3 style="font-size:.95rem;font-weight:700;color:var(--pr-dark);margin-bottom:.75rem"><i class="fa fa-headset me-2 text-green"></i>Need Help?</h3>
+            <div class="footer-contact-item" style="color:var(--pr-text)"><i class="fa fa-phone-alt" style="color:var(--pr-gold)"></i><span>Helpline: <strong>117</strong> (24/7)</span></div>
+            <div class="footer-contact-item" style="color:var(--pr-text)"><i class="fa fa-envelope" style="color:var(--pr-gold)"></i><span>info@pakrail.gov.pk</span></div>
+            <a href="contact.html" class="btn-pr-outline w-100 mt-2" style="justify-content:center;font-size:.85rem">Send Message</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-bottom text-center py-3">© 2026 Pakistan Railways – Ministry of Railways, Government of Pakistan</div>
+  </div>
+</footer>
+
+<div class="a11y-panel">
+  <div class="a11y-sub-panel" id="a11ySubPanel">
+    <div class="a11y-tooltip"><span class="a11y-label">High Contrast</span>
+      <button class="a11y-btn a11y-btn-secondary" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false"><i class="fa fa-adjust"></i></button>
+    </div>
+    <div class="a11y-tooltip"><span class="a11y-label">Large Text</span>
+      <button class="a11y-btn a11y-btn-secondary" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false"><i class="fa fa-text-height"></i></button>
+    </div>
+  </div>
+  <button class="a11y-btn a11y-btn-main" id="a11yToggle" aria-label="Accessibility options" aria-expanded="false"><i class="fa fa-universal-access"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Schedule &amp; Live Status – Pakistan Railways</title>
+  <meta name="description" content="Check Pakistan Railways train schedules, live train status, and route fare charts." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Top Bar -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <a href="tel:117"><i class="fa fa-phone-alt me-1"></i>Helpline: 117</a>
+        <span class="divider"></span>
+        <a href="mailto:info@pakrail.gov.pk"><i class="fa fa-envelope me-1"></i>info@pakrail.gov.pk</a>
+        <span class="divider d-none d-sm-inline-block"></span>
+        <span class="d-none d-sm-inline"><i class="fa fa-clock me-1"></i>Online Booking: 24/7</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="passenger.html"><i class="fa fa-user me-1"></i>Passenger Login</a>
+        <span class="divider"></span>
+        <a href="#"><i class="fa fa-globe me-1"></i>اردو</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" aria-label="Pakistan Railways Home">
+      <div class="brand-logo">
+        <img src="public/pakistan-railways-logo.png" alt="Pakistan Railways Logo">
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-name">Pakistan Railways</span>
+        <span class="brand-urdu">پاکستان ریلویز</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Trains &amp; Schedules</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="schedule.html"><i class="fa fa-calendar me-2"></i>Train Schedule</a></li>
+            <li><a class="dropdown-item" href="schedule.html#live"><i class="fa fa-satellite-dish me-2"></i>Live Train Status</a></li>
+            <li><a class="dropdown-item" href="schedule.html#routes"><i class="fa fa-route me-2"></i>Routes &amp; Fares</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="about.html"><i class="fa fa-train me-2"></i>About Our Fleet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Ticket</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger Info</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="passenger.html"><i class="fa fa-user me-2"></i>Passenger Services</a></li>
+            <li><a class="dropdown-item" href="passenger.html#pnr"><i class="fa fa-search me-2"></i>Check PNR Status</a></li>
+            <li><a class="dropdown-item" href="passenger.html#cancel"><i class="fa fa-times-circle me-2"></i>Cancel Ticket</a></li>
+            <li><a class="dropdown-item" href="passenger.html#luggage"><i class="fa fa-suitcase me-2"></i>Luggage Policy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="booking.html" class="btn-pr-gold">
+          <i class="fa fa-ticket-alt"></i> Book Now
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Trains &amp; Schedules</li>
+      </ol>
+    </nav>
+    <h1><i class="fa fa-calendar-alt me-2"></i>Train Schedule &amp; Live Status</h1>
+    <p style="color:rgba(255,255,255,0.75);margin:0;font-size:1rem">Search trains, check real-time status and explore fares across Pakistan's rail network.</p>
+  </div>
+</div>
+
+<!-- Search + Results -->
+<section class="section-pad-sm" style="background:var(--pr-off-white)">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Filter Sidebar -->
+      <div class="col-lg-3">
+        <div class="filter-sidebar" role="search" aria-label="Train search filters">
+          <div class="filter-title"><i class="fa fa-sliders-h"></i> Search Trains</div>
+
+          <form id="scheduleFilterForm" novalidate>
+            <div class="filter-group">
+              <div class="filter-group-label">From Station</div>
+              <select class="form-select form-select-sm" id="filterFrom" name="from">
+                <option value="">All Departures</option>
+                <option value="khi">Karachi City</option>
+                <option value="lhr">Lahore Junction</option>
+                <option value="rwp">Rawalpindi</option>
+                <option value="isl">Islamabad</option>
+                <option value="psh">Peshawar Cant.</option>
+                <option value="qta">Quetta</option>
+                <option value="mul">Multan Cant.</option>
+                <option value="fsd">Faisalabad</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-group-label">To Station</div>
+              <select class="form-select form-select-sm" id="filterTo" name="to">
+                <option value="">All Destinations</option>
+                <option value="khi">Karachi City</option>
+                <option value="lhr">Lahore Junction</option>
+                <option value="rwp">Rawalpindi</option>
+                <option value="isl">Islamabad</option>
+                <option value="psh">Peshawar Cant.</option>
+                <option value="qta">Quetta</option>
+                <option value="mul">Multan Cant.</option>
+                <option value="fsd">Faisalabad</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-group-label">Travel Class</div>
+              <select class="form-select form-select-sm" id="filterClass" name="class">
+                <option value="any">Any Class</option>
+                <option value="ac">AC Business</option>
+                <option value="ac-sleeper">AC Sleeper</option>
+                <option value="economy">Economy</option>
+                <option value="sleeper">Sleeper</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-group-label">Departure Day</div>
+              <div class="d-flex flex-column gap-1">
+                <div class="form-check filter-check">
+                  <input class="form-check-input" type="radio" name="dayFilter" id="dayAny" value="any" checked>
+                  <label class="form-check-label" for="dayAny" style="font-size:.875rem">Any Day</label>
+                </div>
+                <div class="form-check filter-check">
+                  <input class="form-check-input" type="radio" name="dayFilter" id="dayToday" value="today">
+                  <label class="form-check-label" for="dayToday" style="font-size:.875rem">Today</label>
+                </div>
+                <div class="form-check filter-check">
+                  <input class="form-check-input" type="radio" name="dayFilter" id="dayTomorrow" value="tomorrow">
+                  <label class="form-check-label" for="dayTomorrow" style="font-size:.875rem">Tomorrow</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-pr-primary w-100" style="justify-content:center">
+              <i class="fa fa-search"></i> Search Trains
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="col-lg-9">
+        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--pr-dark);margin:0">Available Trains</h2>
+          <div class="live-indicator" aria-live="polite"><span class="live-dot"></span> Real-time availability</div>
+        </div>
+        <div id="scheduleResults">
+          <!-- Static Dummy Train 1 -->
+          <div class="train-result-card">
+            <div class="train-result-header">
+              <div class="d-flex align-items-center gap-2">
+                <span class="train-no">55 DN</span>
+                <strong style="font-size:.9rem">Green Line Express</strong>
+              </div>
+              <span class="status-badge status-ontime"><i class="fa fa-circle-check"></i> Available</span>
+            </div>
+            <div class="train-result-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="text-center">
+                  <div class="time-display">12:30</div>
+                  <div class="time-station">KHI</div>
+                </div>
+                <div class="duration-line flex-fill">
+                  <div class="duration-dashes flex-fill"></div>
+                  <div class="duration-label">18h</div>
+                </div>
+                <div class="text-center">
+                  <div class="time-display">06:30+1</div>
+                  <div class="time-station">LHR</div>
+                </div>
+                <div class="ms-auto text-end">
+                  <div class="class-price">From <strong>Rs 2,500</strong></div>
+                  <a href="booking.html?train=55 DN" class="btn-pr-primary mt-2 py-2 px-3" style="font-size:.8rem">
+                    <i class="fa fa-ticket-alt"></i> Book
+                  </a>
+                </div>
+              </div>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Business</span>
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Sleeper</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Static Dummy Train 2 -->
+          <div class="train-result-card">
+            <div class="train-result-header">
+              <div class="d-flex align-items-center gap-2">
+                <span class="train-no">42 DN</span>
+                <strong style="font-size:.9rem">Karakoram Express</strong>
+              </div>
+              <span class="status-badge status-ontime"><i class="fa fa-circle-check"></i> Available</span>
+            </div>
+            <div class="train-result-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="text-center">
+                  <div class="time-display">16:00</div>
+                  <div class="time-station">LHR</div>
+                </div>
+                <div class="duration-line flex-fill">
+                  <div class="duration-dashes flex-fill"></div>
+                  <div class="duration-label">18h</div>
+                </div>
+                <div class="text-center">
+                  <div class="time-display">10:00+1</div>
+                  <div class="time-station">KHI</div>
+                </div>
+                <div class="ms-auto text-end">
+                  <div class="class-price">From <strong>Rs 1,200</strong></div>
+                  <a href="booking.html?train=42 DN" class="btn-pr-primary mt-2 py-2 px-3" style="font-size:.8rem">
+                    <i class="fa fa-ticket-alt"></i> Book
+                  </a>
+                </div>
+              </div>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">Economy</span>
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Business</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Static Dummy Train 3 -->
+          <div class="train-result-card">
+            <div class="train-result-header">
+              <div class="d-flex align-items-center gap-2">
+                <span class="train-no">99 DN</span>
+                <strong style="font-size:.9rem">Pak Business Express</strong>
+              </div>
+              <span class="status-badge status-ontime"><i class="fa fa-circle-check"></i> Available</span>
+            </div>
+            <div class="train-result-body">
+              <div class="d-flex align-items-center gap-2">
+                <div class="text-center">
+                  <div class="time-display">15:30</div>
+                  <div class="time-station">LHR</div>
+                </div>
+                <div class="duration-line flex-fill">
+                  <div class="duration-dashes flex-fill"></div>
+                  <div class="duration-label">18h</div>
+                </div>
+                <div class="text-center">
+                  <div class="time-display">09:30+1</div>
+                  <div class="time-station">KHI</div>
+                </div>
+                <div class="ms-auto text-end">
+                  <div class="class-price">From <strong>Rs 1,500</strong></div>
+                  <a href="booking.html?train=99 DN" class="btn-pr-primary mt-2 py-2 px-3" style="font-size:.8rem">
+                    <i class="fa fa-ticket-alt"></i> Book
+                  </a>
+                </div>
+              </div>
+              <div class="mt-2 d-flex gap-2 flex-wrap">
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">Economy</span>
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Business</span>
+                <span class="badge" style="background:rgba(0,102,51,.08);color:var(--pr-green);font-weight:600;font-size:.72rem">AC Sleeper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Live Board -->
+<section class="section-pad bg-white" id="live" aria-labelledby="live-heading">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 gap-3">
+      <div>
+        <h2 class="section-title mb-1" id="live-heading">Live Departures Board</h2>
+        <p class="section-subtitle mb-0">Real-time train status at major stations</p>
+      </div>
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <div class="live-indicator"><span class="live-dot"></span> Live · <span class="live-clock"></span></div>
+        <select class="form-select form-select-sm" id="stationFilter" style="width:auto" aria-label="Select station">
+          <option value="khi">Karachi City</option>
+          <option value="lhr">Lahore Junction</option>
+          <option value="rwp">Rawalpindi</option>
+          <option value="psh">Peshawar Cant.</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="departure-table-wrap">
+      <table class="table departure-table mb-0" aria-label="Live train departures">
+        <thead>
+          <tr>
+            <th scope="col">Train No.</th>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Departs</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="departuresTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Status Legend -->
+    <div class="d-flex gap-3 flex-wrap mt-3" aria-label="Status legend">
+      <span class="status-badge status-ontime"><i class="fa fa-circle-check"></i> On Time</span>
+      <span class="status-badge status-delayed"><i class="fa fa-clock"></i> Delayed</span>
+      <span class="status-badge status-arriving"><i class="fa fa-train"></i> Arriving</span>
+      <span class="status-badge status-departed"><i class="fa fa-check"></i> Departed</span>
+    </div>
+  </div>
+</section>
+
+<!-- Fare Chart -->
+<section class="section-pad" id="routes" style="background:var(--pr-off-white)" aria-labelledby="fare-heading">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title" id="fare-heading">Route Fare Chart</h2>
+      <p class="section-subtitle">Approximate base fares for key routes (per person, one-way)</p>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover" aria-label="Fare chart">
+        <thead>
+          <tr style="background:var(--pr-green);color:white">
+            <th scope="col" style="background:var(--pr-green);color:white">Route</th>
+            <th scope="col" style="background:var(--pr-green);color:white">Distance</th>
+            <th scope="col" style="background:var(--pr-green);color:white">Economy</th>
+            <th scope="col" style="background:var(--pr-green);color:white">Sleeper</th>
+            <th scope="col" style="background:var(--pr-green);color:white">AC Business</th>
+            <th scope="col" style="background:var(--pr-green);color:white">AC Sleeper</th>
+            <th scope="col" style="background:var(--pr-green);color:white">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Karachi → Lahore</th><td>1,287 km</td><td>Rs 900</td><td>Rs 1,200</td><td>Rs 2,500</td><td>Rs 3,200</td><td>~18 hrs</td></tr>
+          <tr><th scope="row">Karachi → Rawalpindi</th><td>1,560 km</td><td>Rs 1,100</td><td>Rs 1,500</td><td>Rs 3,000</td><td>Rs 3,800</td><td>~22 hrs</td></tr>
+          <tr><th scope="row">Karachi → Peshawar</th><td>1,730 km</td><td>Rs 1,200</td><td>Rs 1,600</td><td>Rs 3,200</td><td>Rs 4,000</td><td>~24 hrs</td></tr>
+          <tr><th scope="row">Karachi → Quetta</th><td>870 km</td><td>Rs 1,000</td><td>Rs 1,300</td><td>Rs 2,800</td><td>–</td><td>~20 hrs</td></tr>
+          <tr><th scope="row">Lahore → Rawalpindi</th><td>277 km</td><td>Rs 500</td><td>Rs 700</td><td>Rs 1,400</td><td>–</td><td>~5 hrs</td></tr>
+          <tr><th scope="row">Lahore → Peshawar</th><td>450 km</td><td>Rs 650</td><td>Rs 900</td><td>Rs 1,800</td><td>–</td><td>~6 hrs</td></tr>
+          <tr><th scope="row">Rawalpindi → Peshawar</th><td>173 km</td><td>Rs 350</td><td>Rs 500</td><td>Rs 1,100</td><td>–</td><td>~3 hrs</td></tr>
+          <tr><th scope="row">Lahore → Multan</th><td>340 km</td><td>Rs 650</td><td>Rs 900</td><td>Rs 1,800</td><td>–</td><td>~5 hrs</td></tr>
+          <tr><th scope="row">Karachi → Hyderabad</th><td>165 km</td><td>Rs 300</td><td>Rs 450</td><td>Rs 950</td><td>–</td><td>~2.5 hrs</td></tr>
+          <tr><th scope="row">Karachi → Sukkur</th><td>480 km</td><td>Rs 600</td><td>Rs 800</td><td>Rs 1,700</td><td>–</td><td>~8 hrs</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted mt-3" style="font-size:.82rem"><i class="fa fa-info-circle me-1 text-green"></i> Fares shown are approximate and may vary by train type and booking date. Children under 5 travel free. Senior citizens receive 25% discount.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="row g-4 py-3">
+      <div class="col-md-4">
+        <h3 class="footer-heading">Pakistan Railways</h3>
+        <p class="footer-desc">Connecting Pakistan since 1861. Safe, reliable, and affordable travel across the nation.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa fa-chevron-right"></i> Home</a></li>
+          <li><a href="booking.html"><i class="fa fa-chevron-right"></i> Book Ticket</a></li>
+          <li><a href="passenger.html#pnr"><i class="fa fa-chevron-right"></i> PNR Status</a></li>
+          <li><a href="contact.html"><i class="fa fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 class="footer-heading">Contact</h3>
+        <div class="footer-contact-item"><i class="fa fa-phone-alt"></i>Helpline: 117</div>
+        <div class="footer-contact-item"><i class="fa fa-envelope"></i>info@pakrail.gov.pk</div>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="footer-bottom text-center">© 2026 Pakistan Railways – Ministry of Railways, Government of Pakistan</div>
+  </div>
+</footer>
+
+<div class="a11y-panel">
+  <div class="a11y-sub-panel" id="a11ySubPanel">
+    <div class="a11y-tooltip"><span class="a11y-label">High Contrast</span>
+      <button class="a11y-btn a11y-btn-secondary" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false"><i class="fa fa-adjust"></i></button>
+    </div>
+    <div class="a11y-tooltip"><span class="a11y-label">Large Text</span>
+      <button class="a11y-btn a11y-btn-secondary" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false"><i class="fa fa-text-height"></i></button>
+    </div>
+  </div>
+  <button class="a11y-btn a11y-btn-main" id="a11yToggle" aria-label="Accessibility options" aria-expanded="false"><i class="fa fa-universal-access"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('scheduleFilterForm');
+  if (form) {
+    form.dispatchEvent(new Event('submit'));
+    // Auto search if URL params
+    const p = new URLSearchParams(location.search);
+    if (p.get('from') || p.get('to')) {
+      const ff = document.getElementById('filterFrom');
+      const ft = document.getElementById('filterTo');
+      if (ff && p.get('from')) ff.value = p.get('from');
+      if (ft && p.get('to'))   ft.value = p.get('to');
+      form.dispatchEvent(new Event('submit'));
+    }
+  }
+});
+</script>
+</body>
+</html>
